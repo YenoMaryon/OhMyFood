@@ -1,0 +1,103 @@
+.background-img
+    img
+        z-index: -1
+        position: absolute
+        top: 60px
+        height: 350px
+        width: 100%
+        object-fit: cover
+.menu-content
+    background-color: $beige-grey
+    padding: 35px 30px 30px 30px
+    border-top-left-radius: 50px
+    border-top-right-radius: 50px
+    margin-top: 250px 
+    .h1
+        @include flex(row, space-around, center)
+        padding: 0
+        margin: 0
+        h1
+            font-size: 40px
+            font-weight: 400
+            margin-left: -35px
+    .entree, .plats, .desserts
+        margin-bottom: 35px
+        .entree-title, .plats-title, .desserts-title
+            height: 20px
+            width: 45px
+            border-bottom: 3px solid $tertiary
+            background-color: $beige-grey
+            padding-bottom: 5px
+            h2
+                font-weight: 300
+                font-size: 18px
+        .entree-cards, .plats-cards, .desserts-cards
+            .card
+                box-sizing: border-box
+                background-color: $white
+                border-radius: 18px
+                height: 80px
+                margin: 10px 0 15px 0
+                @include flex(row, space-between, center)
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15)
+                overflow: hidden
+                .card-content
+                    @include flex(row, space-between, flex-end)
+                    padding: 20px
+                    box-sizing: border-box
+                    transition: 0.7s
+                    width: 100%
+                    .card-txt
+                        width: 80%
+                    h3,p
+                        white-space: nowrap
+                        text-overflow: ellipsis
+                        display: block
+                        overflow: hidden
+                        margin: 0
+                        padding: 0
+                    h3 
+                        padding-bottom: 7px
+                        font-size: 20px
+                    p
+                        font-size: 16px
+                        font-weight: 300
+                    .card-price p
+                        font-weight: bold
+                        margin: 0
+                        padding: 0
+                &:hover .card-content
+                    width: 80%
+                .menu-check
+                    background: $tertiary
+                    color: $white
+                    padding: 30px
+                    font-size: 27px
+                    margin-right: -100px
+                    width: 90px
+                    text-align: center
+                    box-sizing: border-box
+                    transition: 0.7s
+                &:hover .menu-check
+                    margin-right: 0
+    ul
+        list-style-type: none
+        margin: 0
+        padding: 0
+        li
+            animation: fadeIn 1s ease-in-out
+            animation-fill-mode: forwards
+            overflow: hidden
+            height: 0
+            opacity: 0
+        li:nth-child(1)
+            animation-delay: 0.01s
+        li:nth-child(2)
+            animation-delay: 0.7s
+        li:nth-child(3)
+            animation-delay: 1.4s
+                       
+
+
+
+    

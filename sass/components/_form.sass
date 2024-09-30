@@ -1,0 +1,21 @@
+.form
+    background-color: $light-grey
+    height: $height
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.6)
+    @include text-center
+    @include flex(row, center, center)
+    top: 69px  
+    width: 100%
+    position: absolute
+    z-index:1
+    .input
+        color: $black
+        @include no-border
+        background-color: $light-grey
+        font-size: 16px
+        width: 130px
+        &::placeholder
+            color:$black
+@media (min-width: $breakpoint-computer)
+    .form
+        box-shadow: none

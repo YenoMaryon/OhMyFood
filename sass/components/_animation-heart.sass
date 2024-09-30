@@ -1,0 +1,27 @@
+.animation-heart
+    height: 27px
+    width: 27px
+    font-size: 26px
+    overflow: hidden
+    .animation-heart-empty
+        width: auto
+        height: auto
+        opacity: 1
+    .animation-heart-full
+        width: 0
+        height: 0
+        opacity: 0
+        transition: 200ms
+        background: linear-gradient($secondary, $primary)
+        -webkit-background-clip: text
+        background-clip: text
+        -webkit-text-fill-color: transparent
+    &:hover
+        .animation-heart-empty
+            width: 0
+            height: 0
+            opacity: 0
+        .animation-heart-full
+            width: auto
+            height: auto
+            opacity: 1

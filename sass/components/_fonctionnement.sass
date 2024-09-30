@@ -1,0 +1,46 @@
+.fonctionnement
+    @include flex(column, center, stretch)
+    width: 100%
+    background: $white
+    padding: 30px
+    box-sizing: border-box
+    .card-content
+        @include flex(row, flex-start, center)
+        margin-bottom: 25px
+        .card-number
+            @include flex(row, center, center)
+            font-weight: bold
+            background-color: $primary
+            color: $white
+            border-radius: 50%
+            width: 25px
+            height: 25px
+            z-index: 1
+        .f-card
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15)
+            @include flex(row, flex-start, center)
+            border-radius: 20px
+            width: 100%
+            margin-left: -14px
+            padding: 7px
+            background-color: $beige-grey
+            .fa-mobile-screen-button, .fa-list
+                color: $grey
+                margin-left: 35px
+            .fa-store
+                color: $primary
+                margin-left: 35px
+            p 
+                font-weight: 500
+                margin-left: 20px
+@media (min-width: $breakpoint-computer)
+    .fonction-cards
+        @include flex(row, space-between, center)
+        flex-wrap: wrap
+        .card-content
+            width: 30%
+            
+
+
+
+      

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1,0">
     <title>La palette du goût</title>
-    <script src="https://kit.fontawesome.com/79a5db58b0.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/79a5db58b0.js" crossorigin="anonymous"></script> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
@@ -16,10 +16,10 @@
 <body>
     <div>
         <header>
-            <nav>
+            <nav class="nav"> 
                 <div>
                     <a href="./index.html">
-                        <i class="fa-solid fa-arrow-left"></i></a>
+                        <i class="fa-solid fa-arrow-left fa-lg"></i></a>
                 </div>
                 <a href="index.html">
                     <img src="./images/logo/ohmyfood@2x.svg" alt="Logo ohmyfood">
@@ -27,172 +27,212 @@
             </nav>
         </header>
         <main>
-            <div class="backgroundimage">
+            <div class="background-img">
                 <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image du restaurant la palette du goût">
             </div>
-            <div>
-                <h1>
-                    La palette du goût
-                    <i class="fa-regular fa-heart"></i>
-                </h1>
+            <div class="container">
+                <div class="menu-content">
+                    <div class="h1">
+                        <h1>
+                            La palette du goût
+                        </h1>
+                        <div class="animation-heart">
+                            <div class="animation-heart-empty">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="animation-heart-full">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li class="entree">
+                                <div class="entree-title">
+                                    <h2>ENTRÉES</h2>
+                                </div>
+                                <div class="entree-cards">
+                                        <div>
+                                            <article class="card">
+                                                <div class="card-content">
+                                                    <div class="card-txt">
+                                                        <h3 class="card-title">Fricassés d'escargots</h3>
+                                                        <p class="card-subtitle">Au piment d'espelette</p>
+                                                    </div>
+                                                    <div class="card-price">
+                                                        <p>25€</p>
+                                                    </div>
+                                                </div>
+                                                <div class="menu-check">
+                                                    <i class="fa-solid fa-circle-check"></i>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div>
+                                            <article class="card">
+                                                <div class="card-content">
+                                                    <div class="card-txt">
+                                                        <h3 class="card-title">Foie gras de canard mi-cuit</h3>
+                                                        <p class="card-subtitle">Et ses copeaux de truffe noire</p>
+                                                    </div>
+                                                    <div class="card-price">
+                                                        <p>35€</p>
+                                                    </div>
+                                                </div>
+                                                <div class="menu-check">
+                                                    <i class="fa-solid fa-circle-check"></i>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div>
+                                            <article class="card">
+                                                <div class="card-content">
+                                                    <div class="card-txt">
+                                                        <h3 class="card-title">Oeuf au plat</h3>
+                                                        <p class="card-subtitle">Assaisonné à la truffe sur lit de caviar</p>
+                                                    </div>
+                                                    <div class="card-price">
+                                                        <p>20€</p>
+                                                    </div>
+                                                </div>
+                                                <div class="menu-check">
+                                                    <i class="fa-solid fa-circle-check"></i>
+                                                </div>
+                                            </article>
+                                        </div>
+                                </div>
+                        </li> 
+                        <li class="plats">
+                                <div class="plats-title"> 
+                                    <h2>PLATS</h2>
+                                </div>
+                                <div class="plats-cards">
+                                        <div>
+                                            <article class="card">
+                                                <div class="card-content">
+                                                    <div class="card-txt">
+                                                        <h3 class="card-title">Filet de boeuf au herbes</h3>
+                                                        <p class="card-subtitle">Accompagné de sa ribambelle de légumes</p>
+                                                    </div>
+                                                    <div class="card-price">
+                                                        <p>40€</p>
+                                                    </div>
+                                                </div>
+                                                <div class="menu-check">
+                                                    <i class="fa-solid fa-circle-check"></i>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div>
+                                            <article class="card">
+                                                <div class="card-content">
+                                                    <div class="card-txt">
+                                                        <h3 class="card-title">Parmentier de queue de boeuf</h3>
+                                                        <p class="card-subtitle">À la truffe noir sur sa purée de panais</p>
+                                                    </div>
+                                                    <div class="card-price">
+                                                        <p>35€</p>
+                                                    </div>
+                                                </div>
+                                                <div class="menu-check">
+                                                    <i class="fa-solid fa-circle-check"></i>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div>
+                                            <article class="card">
+                                                <div class="card-content">
+                                                    <div class="card-txt">
+                                                        <h3 class="card-title">Filet de turbot</h3>
+                                                        <p class="card-subtitle">Aux agrumes</p>
+                                                    </div>
+                                                    <div class="card-price">
+                                                        <p>44€</p>
+                                                    </div>
+                                                </div>
+                                                <div class="menu-check">
+                                                    <i class="fa-solid fa-circle-check"></i>
+                                                </div>
+                                            </article>
+                                        </div>
+                                </div>
+                        </li>
+                        <li class="desserts"> 
+                                <div class="desserts-title">
+                                    <h2>DESSERTS</h2>
+                                </div>
+                                <div class="desserts-cards">
+                                        <div>
+                                            <article class="card">
+                                                <div class="card-content">
+                                                    <div class="card-txt">
+                                                        <h3 class="card-title">Paris-Brest</h3>
+                                                        <p class="card-subtitle">Revisité</p>
+                                                    </div>
+                                                    <div class="card-price">
+                                                        <p>18€</p>
+                                                    </div>
+                                                </div>
+                                                <div class="menu-check">
+                                                    <i class="fa-solid fa-circle-check"></i>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div>
+                                        <article class="card">
+                                            <div class="card-content">
+                                                <div class="card-txt">
+                                                    <h3 class="card-title">Macaron au chocolat d'exception</h3>
+                                                    <p class="card-subtitle">Et glaces à la vanille de Madagascar</p>
+                                                </div>
+                                                <div class="card-price">
+                                                    <p>22€</p>
+                                                </div>
+                                            </div>
+                                            <div class="menu-check">
+                                                <i class="fa-solid fa-circle-check"></i>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div>
+                                        <article class="card">
+                                            <div class="card-content">
+                                                <div class="card-txt">
+                                                    <h3 class="card-title">Mousse au chocolat</h3>
+                                                    <p class="card-subtitle">Au piment d'espelette et à la truffe noire</p>
+                                                </div>
+                                                <div class="card-price">
+                                                    <p>23€</p>
+                                                </div>
+                                            </div>
+                                            <div class="menu-check">
+                                                <i class="fa-solid fa-circle-check"></i>
+                                            </div>
+                                        </article>
+                                    </div>
+                            </div>
+                    </li>
+                </ul>
             </div>
-            <div class="entree"> 
-                <h2 class="entree-title">
-                    ENTRÉES
-                </h2>
-                <div class="entree-cards">
-                        <div>
-                            <article class="card">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Fricassés d'escargots</h3>
-                                        <p class="card-subtitle">Au piment d'espelette</p>
-                                    </div>
-                                    <div class="card-price">
-                                        <p>25€</p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div>
-                            <article class="card">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Foie gras de canard mi-cuit</h3>
-                                        <p class="card-subtitle">Et ses copeaux de truffe noire</p>
-                                    </div>
-                                    <div class="card-price">
-                                        <p>35€</p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div>
-                            <article class="card">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Oeuf au plat</h3>
-                                        <p class="card-subtitle">Assaisonné à la truffe sur lit de caviar</p>
-                                    </div>
-                                    <div class="card-price">
-                                        <p>20€</p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                </div>
+            <div class="button">
+                <a class="button-form" href="#">Commander</a>
             </div>
-            <div class="plats"> 
-                <h2 class="plats-title">
-                    PLATS
-                </h2>
-                <div class="plats-cards">
-                        <div>
-                            <article class="card">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Filet de boeuf au herbes</h3>
-                                        <p class="card-subtitle">Accompagné de sa ribambelle de légumes</p>
-                                    </div>
-                                    <div class="card-price">
-                                        <p>40€</p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div>
-                            <article class="card">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Parmentier de queue de boeuf</h3>
-                                        <p class="card-subtitle">À la truffe noir sur sa purée de panais</p>
-                                    </div>
-                                    <div class="card-price">
-                                        <p>35€</p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div>
-                            <article class="card">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Filet de turbot</h3>
-                                        <p class="card-subtitle">Aux agrumes</p>
-                                    </div>
-                                    <div class="card-price">
-                                        <p>44€</p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                </div>
             </div>
-            <div class="desserts"> 
-                <h2 class="desserts-title">
-                    DESSERTS
-                </h2>
-                <div class="desserts-cards">
-                        <div>
-                            <article class="card">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Paris-Brest</h3>
-                                        <p class="card-subtitle">Revisité</p>
-                                    </div>
-                                    <div class="card-price">
-                                        <p>18€</p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div>
-                            <article class="card">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Macaron au chocolat d'exception</h3>
-                                        <p class="card-subtitle">Et glaces à la vanille de Madagascar</p>
-                                    </div>
-                                    <div class="card-price">
-                                        <p>22€</p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div>
-                            <article class="card">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Mousse au chocolat</h3>
-                                        <p class="card-subtitle">Au piment d'espelette et à la truffe noir</p>
-                                    </div>
-                                    <div class="card-price">
-                                        <p>23€</p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                </div>
-            </div>
-            <button> Commander </button>
         </main>
         <footer class="footer">
-            <img src="./images/logo/ohmyfood@2x.svg" alt="image logo ohmyfood">
-                <div class="footercard">
-                        <ul>
-                            <li><i class="fa-solid fa-utensils"></i>
-                                Fonctionnement du site
-                            </li>
-                            <li><i class="fa-solid fa-handshake-angle"></i>
-                                Devenir Partenaire
-                            </li>
-                            <li>Mentions légales</li>
-                            <li>Contact</li>
-                        </ul>
-                </div> 
+            <div class="footer-card">
+                <h2 class="h2">ohmyfood</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-utensils fa-sm"></i>&nbsp;
+                            Proposer un restaurant
+                        </li>
+                        <li><i class="fa-solid fa-handshake-angle fa-xs"></i>&nbsp;
+                            Devenir Partenaire
+                        </li>
+                        <li>Mentions légales</li>
+                        <li>Contact</li>
+                    </ul>
+            </div> 
         </footer>
-    </div>
-</body>
     </div>
 </body>
 

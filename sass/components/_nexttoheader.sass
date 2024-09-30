@@ -1,0 +1,30 @@
+.nexttoheader
+    @include text-center
+    @include flex(column, center, center)
+    background-color: $beige-grey
+    padding: 50px
+    font-size: 15px
+    margin-top: 120px
+    h1, p
+        @include reset
+        margin-bottom: 15px
+    p
+        font-size: 19px  
+        font-weight: 300
+    .button
+        box-shadow: 0 0 15px 0 $black-transparent
+        @include round-corner(90px)
+        display: block
+        color: $white
+        background: linear-gradient( $secondary, $primary)
+        padding: 15px 40px
+        margin-top: 15px
+        transition: 0.3s
+        &:hover
+            opacity: 0.7
+            box-shadow: 0 0 15px 0 $blacker-transparent
+    a
+        text-decoration: none
+@media (min-width: $breakpoint-computer)
+    h1
+        font-size: 42px

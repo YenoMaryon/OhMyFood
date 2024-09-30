@@ -1,13 +1,581 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    width: auto;
+    height: auto;
+  }
+  to {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
+@keyframes fadeIn {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: auto;
+    opacity: 1;
+  }
+}
+h1 {
+  font-family: "Shrikhand", serif;
+}
+
 body {
-  color: red;
+  font-family: "Roboto", sans-serif;
+}
+
+.nexttoheader h1 {
+  font-family: "Roboto", sans serif;
+}
+
+.h2 {
+  font-family: "Shrikhand", serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
 }
 
 .header {
-  background-color: red;
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0;
+}
+.header img {
+  width: 200px;
 }
 
+@media (min-width: 1024px) {
+  .header {
+    box-shadow: none;
+  }
+}
 .footer {
+  text-align: justify;
+  color: white;
+  background-color: #353535;
+  padding: 20px 20px 20px 30px;
+}
+.footer .h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.footer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-weight: 400;
+}
+.footer ul li {
+  padding-bottom: 10px;
+}
+
+@media (min-width: 1024px) {
+  .footer-card {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .footer-card ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 10px;
+  }
+  .footer-card ul li {
+    padding-right: 20px;
+  }
+}
+.form {
+  background-color: #e6e6e6;
+  height: 50px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  top: 69px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.form .input {
+  color: black;
+  border: none;
+  background-color: #e6e6e6;
+  font-size: 16px;
+  width: 130px;
+}
+.form .input::placeholder {
+  color: black;
+}
+
+@media (min-width: 1024px) {
+  .form {
+    box-shadow: none;
+  }
+}
+.nexttoheader {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 50px;
+  font-size: 15px;
+  margin-top: 120px;
+}
+.nexttoheader h1, .nexttoheader p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+}
+.nexttoheader p {
+  font-size: 19px;
+  font-weight: 300;
+}
+.nexttoheader .button {
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4);
+  -moz-border-radius: 90px;
+  -webkit-border-radius: 90px;
+  border-radius: 90px;
+  display: block;
+  color: white;
+  background: linear-gradient(#ff79da, #9356dc);
+  padding: 15px 40px;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+.nexttoheader .button:hover {
+  opacity: 0.7;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.9);
+}
+.nexttoheader a {
+  text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 42px;
+  }
+}
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  background: white;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.fonctionnement .card-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.fonctionnement .card-content .card-number {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background-color: #9356dc;
+  color: white;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  z-index: 1;
+}
+.fonctionnement .card-content .f-card {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 20px;
+  width: 100%;
+  margin-left: -14px;
+  padding: 7px;
+  background-color: #f2f2f2;
+}
+.fonctionnement .card-content .f-card .fa-mobile-screen-button, .fonctionnement .card-content .f-card .fa-list {
+  color: grey;
+  margin-left: 35px;
+}
+.fonctionnement .card-content .f-card .fa-store {
+  color: #9356dc;
+  margin-left: 35px;
+}
+.fonctionnement .card-content .f-card p {
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+@media (min-width: 1024px) {
+  .fonction-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .fonction-cards .card-content {
+    width: 30%;
+  }
+}
+.restaurants {
+  background-color: #f2f2f2;
+  padding: 40px 30px 40px 30px;
+  color: black;
+}
+.restaurants h2 {
+  Font-size: 25px;
+}
+.restaurants a {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+}
+.restaurants a .article {
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+.restaurants a .article img {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.restaurants a .article .r-card-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.restaurants a .article .r-card-content .card-txt1 {
+  margin: 15px 0px 15px 15px;
+}
+.restaurants a .article .r-card-content .card-txt1 h3, .restaurants a .article .r-card-content .card-txt1 p {
+  margin: 0;
+  padding: 0;
+}
+.restaurants a .article .r-card-content .card-txt1 p {
+  font-size: 17px;
+  font-weight: 300;
+  padding: 5px 0 10px 0;
+}
+.restaurants a .article .r-card-content .animation-heart {
+  padding-right: 20px;
+  padding-bottom: 15px;
+}
+.restaurants a .new {
+  position: relative;
+}
+.restaurants a .new::before {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  content: "Nouveau";
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  color: green;
+  background-color: #99e2d0;
+  border-radius: 3px;
+  height: 30px;
+  width: 80px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@media (min-width: 1024px) {
+  .restaurants-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 75px;
+  }
+  .restaurants-cards a {
+    width: 48%;
+  }
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+}
+.nav img {
+  width: 175px;
+}
+.nav .fa-arrow-left {
+  position: absolute;
+  left: 20px;
+  top: 30px;
+}
+
+.background-img img {
+  z-index: -1;
+  position: absolute;
+  top: 60px;
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu-content {
+  background-color: #f2f2f2;
+  padding: 35px 30px 30px 30px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin-top: 250px;
+}
+.menu-content .h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.menu-content .h1 h1 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-left: -35px;
+}
+.menu-content .entree, .menu-content .plats, .menu-content .desserts {
+  margin-bottom: 35px;
+}
+.menu-content .entree .entree-title, .menu-content .entree .plats-title, .menu-content .entree .desserts-title, .menu-content .plats .entree-title, .menu-content .plats .plats-title, .menu-content .plats .desserts-title, .menu-content .desserts .entree-title, .menu-content .desserts .plats-title, .menu-content .desserts .desserts-title {
+  height: 20px;
+  width: 45px;
+  border-bottom: 3px solid #99e2d0;
+  background-color: #f2f2f2;
+  padding-bottom: 5px;
+}
+.menu-content .entree .entree-title h2, .menu-content .entree .plats-title h2, .menu-content .entree .desserts-title h2, .menu-content .plats .entree-title h2, .menu-content .plats .plats-title h2, .menu-content .plats .desserts-title h2, .menu-content .desserts .entree-title h2, .menu-content .desserts .plats-title h2, .menu-content .desserts .desserts-title h2 {
+  font-weight: 300;
+  font-size: 18px;
+}
+.menu-content .entree .entree-cards .card, .menu-content .entree .plats-cards .card, .menu-content .entree .desserts-cards .card, .menu-content .plats .entree-cards .card, .menu-content .plats .plats-cards .card, .menu-content .plats .desserts-cards .card, .menu-content .desserts .entree-cards .card, .menu-content .desserts .plats-cards .card, .menu-content .desserts .desserts-cards .card {
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 18px;
+  height: 80px;
+  margin: 10px 0 15px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+.menu-content .entree .entree-cards .card .card-content, .menu-content .entree .plats-cards .card .card-content, .menu-content .entree .desserts-cards .card .card-content, .menu-content .plats .entree-cards .card .card-content, .menu-content .plats .plats-cards .card .card-content, .menu-content .plats .desserts-cards .card .card-content, .menu-content .desserts .entree-cards .card .card-content, .menu-content .desserts .plats-cards .card .card-content, .menu-content .desserts .desserts-cards .card .card-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.7s;
+  width: 100%;
+}
+.menu-content .entree .entree-cards .card .card-content .card-txt, .menu-content .entree .plats-cards .card .card-content .card-txt, .menu-content .entree .desserts-cards .card .card-content .card-txt, .menu-content .plats .entree-cards .card .card-content .card-txt, .menu-content .plats .plats-cards .card .card-content .card-txt, .menu-content .plats .desserts-cards .card .card-content .card-txt, .menu-content .desserts .entree-cards .card .card-content .card-txt, .menu-content .desserts .plats-cards .card .card-content .card-txt, .menu-content .desserts .desserts-cards .card .card-content .card-txt {
+  width: 80%;
+}
+.menu-content .entree .entree-cards .card .card-content h3, .menu-content .entree .entree-cards .card .card-content p, .menu-content .entree .plats-cards .card .card-content h3, .menu-content .entree .plats-cards .card .card-content p, .menu-content .entree .desserts-cards .card .card-content h3, .menu-content .entree .desserts-cards .card .card-content p, .menu-content .plats .entree-cards .card .card-content h3, .menu-content .plats .entree-cards .card .card-content p, .menu-content .plats .plats-cards .card .card-content h3, .menu-content .plats .plats-cards .card .card-content p, .menu-content .plats .desserts-cards .card .card-content h3, .menu-content .plats .desserts-cards .card .card-content p, .menu-content .desserts .entree-cards .card .card-content h3, .menu-content .desserts .entree-cards .card .card-content p, .menu-content .desserts .plats-cards .card .card-content h3, .menu-content .desserts .plats-cards .card .card-content p, .menu-content .desserts .desserts-cards .card .card-content h3, .menu-content .desserts .desserts-cards .card .card-content p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.menu-content .entree .entree-cards .card .card-content h3, .menu-content .entree .plats-cards .card .card-content h3, .menu-content .entree .desserts-cards .card .card-content h3, .menu-content .plats .entree-cards .card .card-content h3, .menu-content .plats .plats-cards .card .card-content h3, .menu-content .plats .desserts-cards .card .card-content h3, .menu-content .desserts .entree-cards .card .card-content h3, .menu-content .desserts .plats-cards .card .card-content h3, .menu-content .desserts .desserts-cards .card .card-content h3 {
+  padding-bottom: 7px;
+  font-size: 20px;
+}
+.menu-content .entree .entree-cards .card .card-content p, .menu-content .entree .plats-cards .card .card-content p, .menu-content .entree .desserts-cards .card .card-content p, .menu-content .plats .entree-cards .card .card-content p, .menu-content .plats .plats-cards .card .card-content p, .menu-content .plats .desserts-cards .card .card-content p, .menu-content .desserts .entree-cards .card .card-content p, .menu-content .desserts .plats-cards .card .card-content p, .menu-content .desserts .desserts-cards .card .card-content p {
+  font-size: 16px;
+  font-weight: 300;
+}
+.menu-content .entree .entree-cards .card .card-content .card-price p, .menu-content .entree .plats-cards .card .card-content .card-price p, .menu-content .entree .desserts-cards .card .card-content .card-price p, .menu-content .plats .entree-cards .card .card-content .card-price p, .menu-content .plats .plats-cards .card .card-content .card-price p, .menu-content .plats .desserts-cards .card .card-content .card-price p, .menu-content .desserts .entree-cards .card .card-content .card-price p, .menu-content .desserts .plats-cards .card .card-content .card-price p, .menu-content .desserts .desserts-cards .card .card-content .card-price p {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.menu-content .entree .entree-cards .card:hover .card-content, .menu-content .entree .plats-cards .card:hover .card-content, .menu-content .entree .desserts-cards .card:hover .card-content, .menu-content .plats .entree-cards .card:hover .card-content, .menu-content .plats .plats-cards .card:hover .card-content, .menu-content .plats .desserts-cards .card:hover .card-content, .menu-content .desserts .entree-cards .card:hover .card-content, .menu-content .desserts .plats-cards .card:hover .card-content, .menu-content .desserts .desserts-cards .card:hover .card-content {
+  width: 80%;
+}
+.menu-content .entree .entree-cards .card .menu-check, .menu-content .entree .plats-cards .card .menu-check, .menu-content .entree .desserts-cards .card .menu-check, .menu-content .plats .entree-cards .card .menu-check, .menu-content .plats .plats-cards .card .menu-check, .menu-content .plats .desserts-cards .card .menu-check, .menu-content .desserts .entree-cards .card .menu-check, .menu-content .desserts .plats-cards .card .menu-check, .menu-content .desserts .desserts-cards .card .menu-check {
+  background: #99e2d0;
+  color: white;
+  padding: 30px;
+  font-size: 27px;
+  margin-right: -100px;
+  width: 90px;
+  text-align: center;
+  box-sizing: border-box;
+  transition: 0.7s;
+}
+.menu-content .entree .entree-cards .card:hover .menu-check, .menu-content .entree .plats-cards .card:hover .menu-check, .menu-content .entree .desserts-cards .card:hover .menu-check, .menu-content .plats .entree-cards .card:hover .menu-check, .menu-content .plats .plats-cards .card:hover .menu-check, .menu-content .plats .desserts-cards .card:hover .menu-check, .menu-content .desserts .entree-cards .card:hover .menu-check, .menu-content .desserts .plats-cards .card:hover .menu-check, .menu-content .desserts .desserts-cards .card:hover .menu-check {
+  margin-right: 0;
+}
+.menu-content ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-content ul li {
+  animation: fadeIn 1s ease-in-out;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+}
+.menu-content ul li:nth-child(1) {
+  animation-delay: 0.01s;
+}
+.menu-content ul li:nth-child(2) {
+  animation-delay: 0.7s;
+}
+.menu-content ul li:nth-child(3) {
+  animation-delay: 1.4s;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 0 0 50px 0;
+}
+.button .button-form {
+  display: block;
+  box-shadow: 2px 10px 20px -5px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  color: white;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  background: linear-gradient(#ff79da, #9356dc);
+  padding: 15px 55px;
+  font-size: 17px;
+  transition: 0.3s;
+}
+.button .button-form:hover {
+  opacity: 0.7;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+}
+
+.animation-heart {
+  height: 27px;
+  width: 27px;
+  font-size: 26px;
+  overflow: hidden;
+}
+.animation-heart .animation-heart-empty {
+  width: auto;
+  height: auto;
+  opacity: 1;
+}
+.animation-heart .animation-heart-full {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  transition: 200ms;
+  background: linear-gradient(#ff79da, #9356dc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.animation-heart:hover .animation-heart-empty {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.animation-heart:hover .animation-heart-full {
+  width: auto;
+  height: auto;
+  opacity: 1;
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(#ff79da, #9356dc);
+  z-index: 9999;
+  animation: fade-out 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.loading .loading-spinner {
+  color: white;
+  width: 75px;
+  height: 75px;
+  font-size: 75px;
+  text-align: center;
+  animation: rotate 0.7s ease-out infinite;
+}
+
+.container {
+  width: 100%;
+  max-width: 1024px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.background-grey {
+  background-color: #f2f2f2;
 }
 
 /*# sourceMappingURL=style.css.map */

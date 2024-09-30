@@ -1,0 +1,18 @@
+@mixin text-center
+    text-align: center
+@mixin reset
+    margin: 0
+    padding: 0
+@mixin no-border
+    border: none
+@mixin flex($flex-direction, $justify-content, $align-items)
+    display: flex
+    flex-direction: $flex-direction
+    justify-content: $justify-content
+    align-items: $align-items
+@mixin round-corner($arc)
+    -moz-border-radius: $arc
+    -webkit-border-radius: $arc
+    border-radius: $arc
+
+    
