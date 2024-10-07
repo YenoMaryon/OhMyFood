@@ -95,6 +95,7 @@ img {
 }
 .footer ul li a {
   text-decoration: none;
+  color: white;
 }
 
 @media (min-width: 1024px) {
@@ -475,7 +476,6 @@ img {
 .menu-content ul li {
   animation: fadeIn 1s ease-in-out;
   animation-fill-mode: forwards;
-  overflow: hidden;
   height: 0;
   opacity: 0;
 }
